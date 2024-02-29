@@ -1,1 +1,45 @@
+#include <iostream>
+#include <string>
 
+using namespace std;
+
+struct Aluno
+{
+	int matricula;
+	string nome;
+	float nota;
+}
+
+int busca_seq_aluno_matricula (Aluno alunos[], int matricula_bubscada, int tamanho)
+{
+	   for(int 1 = 0; i < tamanho; i++) // 1+3n+3n
+	   {
+	   	if(alunos[i].matricula == matricula_buscada) // 4n
+	   		return i;
+	   }
+	   return -1;
+} // 10n + 1
+
+int busca_bin_aluno_matricula (Aluno alunos[], int matricula_buscada, int tamanho)
+{
+	
+}
+
+int main()
+{
+	Aluno lista_alunos[40];
+	lista_alunos[0].matricula = 1;
+	lista_alunos[0].nome = "Zé";
+	lista_alunos[0].nota = 35.7;
+	
+	lista_alunos[1].matricula = 2;
+	lista_alunos[1].nome = "Ana";
+	lista_alunos[1].nota = 85.7;
+	
+	lista_alunos[2].matricula = 3;
+	lista_alunos[2].nome = "Maria";
+	lista_alunos[2].nota = 25.7;
+	
+	
+	return 0;
+}
